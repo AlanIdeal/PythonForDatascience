@@ -16,11 +16,9 @@ beta = - 0.4
 def f1(x, _w):
     s = beta + np.sum(x @ w1)
     return σ(s)
-    print(s)
 def f2(x, _w):
     s = beta + np.sum(x @ w2)
     return σ(s)
-    print(s)
 def train1(w1, D1, Y1):
     _w = w1.copy()
     for x, y in zip(D1, Y1):
